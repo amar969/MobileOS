@@ -1,4 +1,6 @@
 import './App.css';
+import { Counter } from './Components/Counter/Counter';
+import { Task } from './Components/Todo/Task';
 
 function App() {
 
@@ -6,15 +8,8 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Mobile Operting System</h1>
-      {["Android", "Blackberry", "iPhone", "Windows Phone" ].map( (el) =>{
-        return <li>{el}</li>
-      })}
-
-      <h1>Mobile Manufacturers</h1>
-      {["Samsung", "HTC", "Micromax", "Apple"]. map((el) => {
-        return <li>{el}</li>
-      })}
+     <Counter /> 
+     <Task /> 
     </div>
   );
 }
